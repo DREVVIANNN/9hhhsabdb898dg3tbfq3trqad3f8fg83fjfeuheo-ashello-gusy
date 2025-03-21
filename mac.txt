@@ -1,0 +1,6 @@
+1 - Open Finder and, in the Finder menu bar, select Go > Go to Folder.
+2 - Type /private/etc/hosts in the textbox and press Return
+3 - Move the hosts file to the Desktop.
+4 - Open the hosts file and a5 - Save the file and return it to its original location.
+5 - Save the file and return it to its original location.
+6 - Open Growtopia and Connect!

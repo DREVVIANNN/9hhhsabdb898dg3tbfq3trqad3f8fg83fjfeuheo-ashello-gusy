@@ -1,0 +1,6 @@
+1 - Press ⊞ Win+R (Windows Key + R) to open up the "Run" window.
+2 - Type in C:\Windows\System32\drivers\etc in the textbox.
+3 - Find file named hosts.
+4 - Right-click on "hosts" file and edit it with Notepad/text editor.
+5 - Add ip above.
+6. Then Save and logon to your growtopia
