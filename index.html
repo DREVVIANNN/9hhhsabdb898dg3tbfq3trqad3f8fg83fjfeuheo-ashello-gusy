@@ -1,0 +1,310 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/remixicon/4.2.0/remixicon.css">
+</head>
+<body>
+    <img class="image-gradient" src="gradient.png" alt="gradient">
+    <div class="layer-blur"></div>
+
+    <div class="container">
+        <header>
+            <h1 data-aos="fade-down" data-aos-duration="1500" class="logo">WBPS.</h1>
+
+            <nav>
+                <a data-aos="fade-down" data-aos-duration="1500" onclick="showPage('home')">Home</a>
+                <a data-aos="fade-down" data-aos-duration="2000" onclick="showPage('host')">Host</a>
+                <a data-aos="fade-down" data-aos-duration="2500" onclick="soon()">About</a>
+                <a data-aos="fade-down" data-aos-duration="3000" onclick="soon()">Credits</a>
+            </nav>
+
+            <button data-aos="fade-down" data-aos-duration="1500" id="google-login" class="btn-signing">SIGN IN</button>
+            <button id="google-logout" class="btn-log-out" style="display: none;">Logout</button>
+        </header>
+
+    <main>
+        <div id="home" class="content active">
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="1500" class="tag-box">
+            <a class="tag-text" onclick="soon()">
+                <div class="tag">Announcement &wedbar;</div>
+            </a>
+            </div>
+
+            <h1 data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="2000">WBPS THE BEST <br> SERVER</h1>
+
+            <p data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="2500" class="description">
+                the best growtopia private server to playing,
+                high community, and make a friend with random player.
+            </p>
+
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="3000" class="buttons">
+                <a onclick="showPage('host')" class="btn-download-host">Download Host &gt;</a>
+                <a href="#" class="btn-sign-in">Join Us</a>
+            </div>
+        </div>
+
+        <div id="host" class="content">
+            <h1 data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="2000">Virtual Host</h1>
+
+            <p data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="2500" class="description">
+                Welcome to Download Host Page, in here you can Download or Copy the WBPS Host.
+            </p>
+
+            <h2 class="host-title"><img class="virtual-host" src="vhost.png" alt="Virtual Host"> Virtual Host</h2>
+
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="3000" class="buttons">
+            <p class="title-host-1">WBPS Host:</p>
+                <a href="WBPS.txt" target="_blank" download class="btn-download">Download Host <i class="ri-file-download-line"></i></a>
+            </div>
+
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="3000" class="buttons">
+            <p class="title-host-1">Virtual Host APK:</p>
+                <a href="VirtualHost.apk" target="_blank" download class="btn-download">Download APK <img width="10px" src="vhost.png" alt="Virtual Host"></a>
+            </div>
+
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="3000" class="buttons">
+                <a onclick="showPage('home')" target="_blank" class="btn-download-host">Back Home</a>
+                <a onclick="showPage('host-2')" target="_blank" class="btn-download-host">Next Page &gt;</a>
+            </div>
+
+        </div>
+
+        <div id="host-2" class="content">
+            <h1 data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="2000">PowerTunnel</h1>
+
+            <p data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="2500" class="description">
+                Welcome to Download Host Page, in here you can Download or Copy the WBPS Host.
+            </p>
+
+            <h2 class="host-title"><img class="powertunnel" src="power.png" alt="PowerTunnel"> PowerTunnel</h2>
+
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="3000" class="buttons">
+            <p class="title-host-1">WBPS PowerTunnel:</p>
+                <a onclick="copyText('text1', 'msg1')" class="btn-download">Copy Host <i class="ri-file-copy-line"></i></a>
+                <p id="msg1" class="copy-message"></p>
+            </div>
+
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="3000" class="buttons">
+            <p class="title-host-1">PowerTunnel APK:</p>
+                <a href="PowerTunnel.apk" target="_blank" download class="btn-download">Download APK <img width="10px" src="power.png" alt="PowerTunnel"></a>
+            </div>
+
+            <textarea class="copyfield" id="text1">https://gtpshost.com/WBPS.txt</textarea>
+
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="3000" class="buttons">
+                <a onclick="showPage('host')" target="_blank" class="btn-download-host">Back</a>
+                <a onclick="showPage('host-3')" target="_blank" class="btn-download-host">Next Page &gt;</a>
+            </div>
+
+        </div>
+
+        <div id="host-3" class="content">
+            <h1 data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="2000">Surge 5</h1>
+
+            <p data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="2500" class="description">
+                Welcome to Download Host Page, in here you can Download or Copy the WBPS Host.
+            </p>
+
+            <h2 class="host-title"><img class="surge5" src="surge5.webp" alt="Surge 5"> Ios Surge5</h2>
+
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="3000" class="buttons">
+            <p class="title-host-1">WBPS Ios Surge 5:</p>
+                <a onclick="copyText('text2', 'msg2')" class="btn-download">Copy Host <i class="ri-file-copy-line"></i></a>
+                <p id="msg2" class="copy-message"></p>
+            </div>
+
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="3000" class="buttons">
+            <p class="title-host-1">Surge 5 APK:</p>
+                <a href="https://apps.apple.com/us/app/surge-5/id1442620678" target="_blank" class="btn-download">Download APK <img width="10px" src="surge5.webp" alt="Surge 5"></a>
+            </div>
+
+            <textarea class="copyfield" id="text2">https://ios.gtpshost.com/WBPS</textarea>
+
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="3000" class="buttons">
+                <a onclick="showPage('host-2')" target="_blank" class="btn-download-host">Back</a>
+                <a onclick="showPage('host-4')" target="_blank" class="btn-download-host">Next Page &gt;</a>
+            </div>
+
+        </div>
+
+        <div id="host-4" class="content">
+            <h1 data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="2000">Windows</h1>
+
+            <p data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="2500" class="description">
+               Welcome to Download Host Page, in here you can Download or Copy the WBPS Host.
+            </p>
+
+            <h2 class="host-title"><img class="windows" src="window.png" alt="Windows"> Windows</h2>
+
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="3000" class="buttons">
+            <p class="title-host-1">WBPS Windows:</p>
+                <a onclick="copyText('text3', 'msg3')" class="btn-download">Copy Host <i class="ri-file-copy-line"></i></a>
+                <p id="msg3" class="copy-message"></p>
+            </div>
+
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="3000" class="buttons">
+            <p class="title-host-1">Tutorial:</p>
+                <a href="windows.txt" target="_blank" class="btn-download">Tutorial <img width="10px" src="window.png" alt="Windows"></a>
+            </div>
+
+            <textarea class="copyfield" id="text3">
+                103.59.160.221 growtopia1.com
+                103.59.160.221 growtopia2.com
+                103.59.160.221 www.growtopia1.com
+                103.59.160.221 www.growtopia2.com
+                103.59.160.221 RvLnd.here
+            </textarea>
+
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="3000" class="buttons">
+                <a onclick="showPage('host-3')" target="_blank" class="btn-download-host">Back</a>
+                <a onclick="showPage('host-5')" target="_blank" class="btn-download-host">Next Page &gt;</a>
+            </div>
+
+        </div>
+
+        <div id="host-5" class="content">
+            <h1 data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="2000">MAC</h1>
+
+            <p data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="2500" class="description">
+               Welcome to Download Host Page, in here you can Download or Copy the WBPS Host.
+            </p>
+
+            <h2 class="host-title"><img class="mac" src="apple.webp" alt="MAC Ios"> MACBook</h2>
+
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="3000" class="buttons">
+            <p class="title-host-1">WBPS MACBook:</p>
+                <a onclick="copyText('text3', 'msg3')" class="btn-download">Copy Host <i class="ri-file-copy-line"></i></a>
+                <p id="msg3" class="copy-message"></p>
+            </div>
+
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="3000" class="buttons">
+            <p class="title-host-1">Tutorial:</p>
+                <a href="mac.txt" target="_blank" class="btn-download">Tutorial <img width="10px" src="apple.webp" alt="MAC Ios"></a>
+            </div>
+
+            <textarea class="copyfield" id="text3">
+                103.59.160.221 growtopia1.com
+                103.59.160.221 growtopia2.com
+            </textarea>
+
+            <div data-aos="fade-zoom-in"
+            data-aos-easing="ease-in-back"
+            data-aos-delay="300"
+            data-aos-offset="0" data-aos-duration="3000" class="buttons">
+                <a onclick="showPage('host')" target="_blank" class="btn-download-host">Back</a>
+            </div>
+
+        </div>
+    </main>
+
+    <spline-viewer data-aos="fade-zoom-in"
+    data-aos-easing="ease-in-back"
+    data-aos-delay="300"
+    data-aos-offset="0" data-aos-duration="3000" class="robot-3d" url="https://prod.spline.design/qARYRBUozW231IhW/scene.splinecode"></spline-viewer>
+        
+    </div>
+
+    <script type="module" src="https://unpkg.com/@splinetool/viewer@1.9.79/build/spline-viewer.js"></script>
+
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
+
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-storage.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.0/firebase-firestore.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
